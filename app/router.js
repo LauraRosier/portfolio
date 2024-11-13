@@ -8,7 +8,7 @@ export const router = Router();
 
 router.get("/", mainController.renderHomePage);
 router.get("/catalogue", catalogueController.renderCataloguePage);
-router.get("/detail", detailController.renderDetailPage);
+router.get("/detail/:id", detailController.renderDetailPage);
 router.get("/apropos", aproposController.renderAproposPage);
 
 

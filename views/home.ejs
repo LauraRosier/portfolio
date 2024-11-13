@@ -12,22 +12,15 @@
         
 
         <h2>Nouveautés</h2>
+
         <section class="articles">
+            <% coffees.forEach(coffee => { %>
             <article>
                 <img src="/coffees/100955890.png">
-                <a  href="/detail">Voir le détail</a>
+                <h3><%= coffee.name %></h3>
+                <a  href="/detail/<%= coffee.id %>">Voir le détail</a>
             </article>
-
-            <article>
-                <img src="/coffees/100955894.png">
-                <a  href="/detail">Voir le détail</a>
-            </article>
-
-            <article>
-                <img src="/coffees/105589090.png">
-                <a href="/detail">Voir le détail</a>
-            </article>
-
+            <% }) %>
         </section>
        
 
