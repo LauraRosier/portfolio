@@ -10,6 +10,8 @@ app.set("views", "./views");
 
 app.use(express.static("./public"));
 
+app.use(express.urlencoded({ extended: true }));
+
 app.use(router);
 
 app.get('*', (req, res) => {

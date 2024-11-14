@@ -183,6 +183,11 @@ input{
 footer {   
     font-size: 0.1rem;
   }
+/**admin**/
+.addCoffeeForm{
+    margin-left: 10rem;
+    width: 50%;
+}
 @media screen and (max-width:1280px){
     body{
         padding: 0 1rem; 

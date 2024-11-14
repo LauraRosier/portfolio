@@ -27,3 +27,33 @@ export async function getCoffeesByCharacteristic(coffeeCharact) {
   const coffeeByCharact = promise.rows;
   return coffeeByCharact;
 }
+
+export async function createCoffee(coffeeData) {
+  const promise = await client.query(`
+    INSERT INTO "coffee" (
+      "name",
+      "description", 
+      "reference", 
+      "origin", 
+      "price", 
+      "characteristic", 
+      "picture", 
+      "available"
+    )
+    VALUES (
+      $1, $2, $3, $4, $5, $6, $7, $8
+    )
+    RETURNING *
+  `, [
+    coffeeData.name,
+    coffeeData.description,
+    coffeeData.reference,
+    coffeeData.origin,
+    coffeeData.price,
+    coffeeData.characteristic,
+    coffeeData.picture,
+    coffeeData.available === 'TRUE' 
+  ]);
+
+  return promise.rows[0];
+}

@@ -1,0 +1,45 @@
+<%- include('./partials/header') %>
+
+
+<h2>Ajouter un nouveau café</h2>
+
+<form class="addCoffeeForm" method="POST" action="/admin/coffee/add">
+  <label for="name">Nom du café</label>
+  <input type="text" id="name" name="name" placeholder="nom du café" required>
+
+  <label for="description">Description</label>
+  <input type="text" id="description" name="description" placeholder="description" required>
+
+  <label for="reference">Référence</label>
+  <input type="text" id="reference" name="reference" placeholder="302932754" required>
+
+  <label for="origin">Origine</label>
+  <input type="text" id="origin" name="origin" placeholder="pays" required>
+
+  <label for="price">Prix</label>
+  <input type="text" id="price" name="price" placeholder="19.99" required>
+
+  <label for="characteristic">Caractéristique</label>
+  <select name="characteristic" id="characteristic">
+    <option value="Corsé">Corsé</option>
+    <option value="Acide">Acide</option>
+    <option value="Fruité">Fruité</option>
+    <option value="Doux">Doux</option>
+    <option value="Épicé">Epicé</option>
+    <option value="Chocolaté">Chocolaté</option>
+  </select>
+
+  <label for="picture">Image</label>
+  <input type="text" id="picture" name="picture" placeholder="/coffees/100955890.png" required>
+
+  <label for="available">Disponibilité</label>
+  <input type="text" id="available" name="available" placeholder="TRUE ou FALSE" required>
+
+  <button>Ajouter</button>
+</form>
+</main>
+
+
+
+
+<%- include('./partials/footer') %>
