@@ -138,20 +138,22 @@ article a{
     padding: 1.5rem;
 }
 form{
-    width: 30rem;
-    margin-left: 80rem;
+    width: 40rem;
+    margin-left: 110rem;
     padding: 20px;
     border-radius: 8px; 
     display: flex;
     flex-direction: column;  
     gap: 15px;  
-  }
-  label {
+    font-size: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+label {
       font-size: 2em;
       color: #F7DBB9;
       margin-bottom: 8px;
-    }
-    input{
+}
+input{
       background-color: #3E1E04;
       color:  #F7DBB9;
       border-radius: 25px 25px 25px 25px;;
@@ -159,7 +161,7 @@ form{
       border: none;
       cursor: pointer;
       margin-left: 5rem;
-  }
+}
 /**détail**/
 .detail-article{
    width: 40%;
@@ -178,52 +180,50 @@ form{
 .h2Category{
     color: #F7DBB9;
 }
-@media(max-width:1280px){
+footer {   
+    font-size: 0.1rem;
+  }
+@media screen and (max-width:1280px){
+    body{
+        padding: 0 1rem; 
+    }
+
    .menu-container{
-    width: 100%;
     flex-direction: column;
-   
+    margin-left: 2rem;
    }
    .menu-listing{
     flex-direction: column;
-   }
-   .mobile-menu{
-    width: 100%;
-    box-sizing: border-box;
-    padding: 20px;
-}
-   main{
-    display: block;
+    margin-left: 10rem;
    }
    .cups{
     display: none;
-}
+   }
     .catalogLink{
         font-size: 2rem;
-        margin-left: 2rem;
-        
     }
     h2{
-        margin-top: 3rem;
-        margin-left: 1rem;
+        font-size: 2rem;
+        margin-top: 1rem;
     }
     .articles{
        display: block;
     }
     .detail-article{
-        width: 80%;
-        height: 50%;
-        margin-left: 5rem;
+        margin: 0;
+        width: 30rem;
+        height: 40rem;
+      
     }
-}
-@media screen and (min-width: 1280px) {
-    header button {
+    form{
+        width: 100%;
+        margin-left: 1rem;
+
+
+    }
+    .titreCatalogue{
         display: none;
     }
-    
 }
-footer {
-    margin-left: 75rem;
-    font-size: 0.1rem;
-  }
+
 
