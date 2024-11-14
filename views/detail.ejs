@@ -8,8 +8,15 @@
             <h3><%= oneCoffee.name %></h3>
             <p><%= oneCoffee.description%></p>
             <p>Origine: <%= oneCoffee.origin %></p>
-            <p>Prix: <%= oneCoffee.price %>€</p>
             <p>Caractéristique: <%= oneCoffee.characteristic %></p>
+            <p>Prix: <%= oneCoffee.price %>€</p>
+
+            <% if (oneCoffee.available) { %>
+                <p class="disponible">Disponible</p>
+              <% } else { %>
+                <p class="indisponible">Indisponible</p>
+              <% } %>
+
             <a href="/catalogue">Catalogue</a>
         </article>
     </main>
