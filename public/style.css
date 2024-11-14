@@ -152,9 +152,6 @@ article a{
 }
 
 @media(max-width:1280px){
-    .menu-listing{
-        display: none;
-    }
    .menu-container{
     width: 100%;
     flex-direction: column;

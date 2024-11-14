@@ -18,6 +18,7 @@ export async function renderAllCoffees(req, res) {
     const allCoffees = await dataMapper.getAllCoffees();
 
     res.render('allCoffees', {allCoffees});
+    console.log(allCoffees);
 
   }  catch (error) {
     console.error(error);

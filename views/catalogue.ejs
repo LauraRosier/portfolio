@@ -7,7 +7,7 @@
         <section class="articles">
             <% coffees.forEach(coffee => { %>
             <article>
-                <img src="/coffees/100955890.png">
+                <img src="<%= coffee.picture %>" alt="<%= coffee.name %>">
                 <h3><%= coffee.name %></h3>
                 <a  href="/detail/<%= coffee.id %>">Voir le détail</a>
             </article>
