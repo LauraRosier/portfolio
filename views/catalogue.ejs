@@ -1,6 +1,19 @@
 <%- include('./partials/header') %>
     <main>
         <h1 class="titreCatalogue">NOTRE CATALOGUE</h1>
+     
+        <form action="/catalogue/category" method="get">
+            <label for="characteristic">Chercher par caractéristique:</label>
+            <select name="characteristic" id="characteristic">
+              <option value="Corsé">Corsé</option>
+              <option value="Acide">Acide</option>
+              <option value="Fruité">Fruité</option>
+              <option value="Doux">Doux</option>
+              <option value="Épicé">Epicé</option>
+              <option value="Chocolaté">Chocolaté</option>
+            </select>
+            <input type="submit" value="Filtrer">
+          </form>
 
         <h2>Nouveautés</h2>
 
@@ -12,6 +25,7 @@
                 <a  href="/detail/<%= coffee.id %>">Voir le détail</a>
             </article>
             <% }) %>
+            </section>
             <a class="btnCatalog" href="/catalogue/coffees">Voir tout le catalogue</a>
 
     </main>

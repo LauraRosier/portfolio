@@ -130,12 +130,36 @@ article a{
     text-align: center;
     color: #3E1E04;
     margin-top: 2rem;
+    margin-left: 4rem;
     width: 40rem;
     font-size: 3rem;
     border-radius: 25px 25px 25px 25px;
     background-color: #F7DBB9;
     padding: 1.5rem;
 }
+form{
+    width: 30rem;
+    margin-left: 80rem;
+    padding: 20px;
+    border-radius: 8px; 
+    display: flex;
+    flex-direction: column;  
+    gap: 15px;  
+  }
+  label {
+      font-size: 2em;
+      color: #F7DBB9;
+      margin-bottom: 8px;
+    }
+    input{
+      background-color: #3E1E04;
+      color:  #F7DBB9;
+      border-radius: 25px 25px 25px 25px;;
+      font-size: 1em;
+      border: none;
+      cursor: pointer;
+      margin-left: 5rem;
+  }
 /**détail**/
 .detail-article{
    width: 40%;
@@ -150,7 +174,10 @@ article a{
 .detail-article h3{
     margin-top: 2rem;
 }
-
+/**category**/
+.h2Category{
+    color: #F7DBB9;
+}
 @media(max-width:1280px){
    .menu-container{
     width: 100%;

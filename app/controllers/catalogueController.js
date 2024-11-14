@@ -24,6 +24,15 @@ export async function renderAllCoffees(req, res) {
     console.error(error);
     res.status(500).render("500");
   };
+
+}
+
+export async function searchByCategory(req, res) {
+  const searchElement = req.query.characteristic;
+
+  const coffeeByCharact = await dataMapper.getCoffeesByCharacteristic(searchElement);
+
+  res.render('categories', {coffeeByCharact});
 }
 
  

@@ -19,3 +19,11 @@ export async function getAllCoffees() {
   const allCoffee = promise.rows;
   return allCoffee;
 }
+
+export async function getCoffeesByCharacteristic(coffeeCharact) {
+  const promise = await client.query('SELECT * FROM "coffee" WHERE "characteristic" = $1', [
+    coffeeCharact
+  ]);
+  const coffeeByCharact = promise.rows;
+  return coffeeByCharact;
+}
