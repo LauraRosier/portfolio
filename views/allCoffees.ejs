@@ -6,6 +6,7 @@
     <section class="articles">
         <% allCoffees.forEach(coffee => { %>
         <article>
+            <a class="FavLink" title="Ajouter au fav" href="/fav/add/<%= coffee.id %>">[+] favoris ♥</a>
             <img src="<%= coffee.picture %>" alt="<%= coffee.name %>">
             <% console.log(coffee.picture) %>
             <h3><%= coffee.name %></h3>

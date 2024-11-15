@@ -86,7 +86,7 @@ h3{
 article{
    width: 35rem;
    border: black, solid;
-   height: 35rem;
+   height: 40rem;
    background-color: #3E1E04;
    margin-bottom: 4rem;
 
@@ -162,6 +162,12 @@ input{
       cursor: pointer;
       margin-left: 5rem;
 }
+.FavLink{
+    font-size: 1rem;
+    padding: 0rem;
+    color: #F7DBB9;
+    background-color: #3E1E04;
+}
 /**détail**/
 .detail-article{
    width: 40%;
@@ -175,6 +181,9 @@ input{
 }
 .detail-article h3{
     margin-top: 2rem;
+}
+h4{
+    padding-left: 50rem;
 }
 /**category**/
 .h2Category{

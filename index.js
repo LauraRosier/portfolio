@@ -1,5 +1,7 @@
 import "dotenv/config";
 import express from "express";
+import session from 'express-session';
+
 
 import {router} from "./app/router.js";
 
@@ -9,6 +11,23 @@ app.set("view engine", "ejs");
 app.set("views", "./views");
 
 app.use(express.static("./public"));
+
+app.use(session({
+  secret: process.env.SESSION_SECRET, 
+  resave: true, 
+  saveUninitialized: true, 
+  cookie: {
+    secure: false,
+    maxAge: 1000 * 60 * 60 
+  }
+}));
+
+app.use((req, res, next) => {
+  if(typeof req.session.fav === 'undefined') {
+    req.session.fav = [];
+  }
+  next();
+});
 
 app.use(express.urlencoded({ extended: true }));
 
