@@ -1,8 +1,9 @@
 <%- include('./partials/header') %>
 
 
-<h2>Ajouter un nouveau café</h2>
-
+<div class="formAdmin">
+  <div class="addForm">
+  <h2>Ajouter un nouveau café</h2>
 <form class="addCoffeeForm" method="POST" action="/admin/coffee/add">
   <label for="name">Nom du café</label>
   <input type="text" id="name" name="name" placeholder="nom du café" required>
@@ -37,6 +38,17 @@
 
   <button>Ajouter</button>
 </form>
+</div> 
+
+<div class="deleteForm">
+<h2>Supprimer un café</h2>
+<form class="DeleteCoffeeForm" method="POST" action="/admin/coffee/delete">
+  <label for="reference">Référence</label>
+  <input type="text" id="reference" name="reference" placeholder="302932754" required>
+
+  <button>Supprimer</button>
+</div>
+</div>
 </main>
 
 

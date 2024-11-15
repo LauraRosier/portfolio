@@ -184,9 +184,18 @@ footer {
     font-size: 0.1rem;
   }
 /**admin**/
+.formAdmin{
+    display: flex;
+    gap: 10rem;
+}
 .addCoffeeForm{
     margin-left: 10rem;
-    width: 50%;
+    width: 60%;
+}
+.DeleteCoffeeForm{
+    margin-left: 10rem;
+    width: 60%;
+  
 }
 @media screen and (max-width:1280px){
     body{

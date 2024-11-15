@@ -28,6 +28,13 @@ export async function getCoffeesByCharacteristic(coffeeCharact) {
   return coffeeByCharact;
 }
 
+export async function deleteOneCoffeeByReference(coffeeReference) {
+  const promise = await client.query('DELETE FROM "coffee" WHERE "reference" = $1', [
+    coffeeReference
+  ]);
+  return promise;
+}
+
 export async function createCoffee(coffeeData) {
   const promise = await client.query(`
     INSERT INTO "coffee" (

@@ -17,8 +17,9 @@ router.get("/detail/:id", detailController.renderDetailPage);
 
 router.get("/apropos", aproposController.renderAproposPage);
 
-router.get("/admin/coffee/add", adminController.renderAddCoffeePage);
+router.get("/admin/coffee", adminController.renderAddCoffeePage);
 router.post("/admin/coffee/add", adminController.createNewCoffee);
+router.post("/admin/coffee/delete", adminController.deleteOneCoffeeByReference);
 
 
 

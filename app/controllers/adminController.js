@@ -20,7 +20,7 @@ export async function createNewCoffee(req, res) {
       !formDataCoffee.available
 
     ) {
-      return res.status(400).send("Tous les champs sont obligatoires !");
+      return res.status(400).send("tous les champs sont  obligatoires");
     }
  
     const coffeeInserted = await dataMapper.createCoffee(formDataCoffee);
@@ -28,6 +28,25 @@ export async function createNewCoffee(req, res) {
     res.redirect(`/detail/${coffeeInserted.id}`);
 
   }catch(error) {
+    console.error(error);
+    res.status(500).render("500");
+  }
+}
+export async function deleteOneCoffeeByReference(req, res) {
+  try{
+    const formDataCoffee = req.body.reference;
+
+    if(
+      !formDataCoffee
+    ) {
+      return res.status(400).send("tous les champs sont obligatoires !");
+    }
+
+    const coffeeDeleted = await dataMapper.deleteOneCoffeeByReference(formDataCoffee);
+
+    res.render('admin', {coffeeDeleted});
+
+  }  catch(error) {
     console.error(error);
     res.status(500).render("500");
   }

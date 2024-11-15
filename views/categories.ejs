@@ -1,5 +1,20 @@
 <%- include('./partials/header') %>
+
 <main>
+
+    <form action="/catalogue/category" method="get">
+        <label for="characteristic">Chercher par caractéristique:</label>
+        <select name="characteristic" id="characteristic">
+          <option value="Corsé">Corsé</option>
+          <option value="Acide">Acide</option>
+          <option value="Fruité">Fruité</option>
+          <option value="Doux">Doux</option>
+          <option value="Épicé">Epicé</option>
+          <option value="Chocolaté">Chocolaté</option>
+        </select>
+        <input type="submit" value="Filtrer">
+      </form>
+
     <% if (coffeeByCharact.length > 0) { %>
         <h2 class="h2Category">Caractéristique : <%= coffeeByCharact[0].characteristic %></h2>
       <% } %>
