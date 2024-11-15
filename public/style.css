@@ -21,14 +21,14 @@ header a{
     list-style: none;
     display: flex;
     align-items: center;
-    background-color: #F7DBB9;
+    
     border-radius: 25px 25px 25px 25px;
     padding: 0.1rem;
     margin-right: 6rem;
 }
 .menu-listing a{
     text-decoration: none;
-    color: black;
+    color:  #F7DBB9;
     margin-left: 2rem;
     margin-right: 2rem;
     font-size: 2.5rem;
@@ -40,6 +40,7 @@ h1{
     margin-left: 6rem;
     margin-bottom: 3rem;
     font-size: 5rem;
+    color:#3E1E04 ;
 }
 p{
     font-size: 1.2rem;
@@ -70,6 +71,7 @@ h2{
     font-size: 4rem;
     margin-left: 4rem;
     margin-bottom: 3rem;
+    color: #3E1E04;
 }
 h3{
     color: #F7DBB9;
@@ -172,7 +174,7 @@ input{
 .detail-article{
    width: 40%;
    border: black, solid;
-   height: 35rem;
+   height: 38rem;
    background-color: #3E1E04;
    margin-left: 10rem;
    background-image: url(coffees/958090105.png);
@@ -191,34 +193,28 @@ h4{
 }
 footer {   
     font-size: 0.1rem;
+    margin-top: 2rem;
   }
 /**admin**/
 .formAdmin{
     display: flex;
+    flex-wrap: wrap;
     gap: 10rem;
 }
-.addCoffeeForm{
+.addCoffeeForm, .DeleteCoffeeForm{
     margin-left: 10rem;
     width: 60%;
 }
-.DeleteCoffeeForm{
-    margin-left: 10rem;
-    width: 60%;
-  
+
+#menu-button{
+    display: none;
 }
 @media screen and (max-width:1280px){
-    body{
-        padding: 0 1rem; 
+    h1, h2, p {
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 
-   .menu-container{
-    flex-direction: column;
-    margin-left: 2rem;
-   }
-   .menu-listing{
-    flex-direction: column;
-    margin-left: 10rem;
-   }
    .cups{
     display: none;
    }
@@ -229,24 +225,68 @@ footer {
         font-size: 2rem;
         margin-top: 1rem;
     }
-    .articles{
-       display: block;
+    .articles {
+        display: block;
     }
-    .detail-article{
-        margin: 0;
-        width: 30rem;
-        height: 40rem;
-      
+    .btnCatalog{
+        font-size: 2rem;
     }
+    article{
+        width: 28rem;
+        
+    }
+    
     form{
         width: 100%;
         margin-left: 1rem;
-
-
     }
     .titreCatalogue{
         display: none;
     }
-}
+    .detail-article{
+        width: 100%;
+        border: black, solid;
+        height: 100%;
+        margin-right: 4rem;
+     }
+     h4{
+        padding-left: 1rem;
+        width: 100%;
+        margin-left: 1rem;
+     }
+     .detail-article a {
+        margin-left: 2rem;
+     }
+      #menu-button {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        margin-top: 10rem;
+      }
+      .menu-listing {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        width: 100%;
+        background-color: #3E1E04;
+        padding: 10px 0;
+      }
+      .menu-listing.expanded {
+        display: flex; 
+      }
+      .menu-listing li {
+        margin: 10px 0;  
+        text-align: center;
+      }
+      .addCoffeeForm, .DeleteCoffeeForm{
+        width: 80%;  
+        margin-left: 0;  
+        margin-top: 2rem;
+    }
+    }
 
 
