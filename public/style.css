@@ -85,9 +85,14 @@ h3{
     margin-left: 4rem;
     margin-right: 4rem;
 }
+.articlesFav{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 article{
    width: 35rem;
-   border: black, solid;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
    height: 40rem;
    background-color: #3E1E04;
    margin-bottom: 4rem;

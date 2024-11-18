@@ -4,6 +4,7 @@ import session from 'express-session';
 
 
 import {router} from "./app/router.js";
+import { notFoundMiddleware } from "./app/middlewares/notFoundMiddleware.js";
 
 const app = express();
 
@@ -33,9 +34,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(router);
 
-app.get('*', (req, res) => {
-  res.status(404).render('404');
-});
+app.use(notFoundMiddleware);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
