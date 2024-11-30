@@ -1,297 +1,290 @@
-body{
+body {
     background-color: #825432;
     font-family: 'fantasy', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.menu-container{
+.menu-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 3rem;
+    padding: 2rem;
 }
-header a{
+
+header a {
     display: flex;
     align-items: center;
     font-weight: bold;
-    color:#3E1E04;
-    font-size: 3rem;
+    color: #3E1E04;
+    font-size: 2.5rem;
     text-decoration: none;
 }
-.menu-listing{
+
+.menu-listing {
     list-style: none;
     display: flex;
     align-items: center;
-    
-    border-radius: 25px 25px 25px 25px;
-    padding: 0.1rem;
+    border-radius: 25px;
+    padding: 0.5rem;
     margin-right: 6rem;
 }
-.menu-listing a{
+
+.menu-listing a {
     text-decoration: none;
-    color:  #F7DBB9;
+    color: #F7DBB9;
     margin-left: 2rem;
     margin-right: 2rem;
     font-size: 2.5rem;
 }
-.homepage{
+
+.homepage {
     display: flex;
+    flex-direction: column;
+    padding: 3rem;
 }
-h1{
-    margin-left: 6rem;
-    margin-bottom: 3rem;
-    font-size: 5rem;
-    color:#3E1E04 ;
+
+h1 {
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    color: #3E1E04;
+    text-align: left;
 }
-p{
-    font-size: 1.2rem;
-    margin-top: 1rem;
-    margin-left: 6rem;
-    margin-right: 2rem;
-    margin-bottom: 4rem;
-    line-height: 1.5rem;
+
+p {
     font-size: 1.5rem;
-    text-align:left
+    margin: 1rem 0;
+    line-height: 1.5rem;
+    text-align: left;
 }
-.cups{
+
+.cups {
     margin-right: 2rem;
     height: 50%;
-
 }
-.catalogLink{
-    font-size: 3rem;
-    margin-left: 6rem;
+
+.catalogLink {
+    font-size: 2.5rem;
+    margin-top: 2rem;
     background-color: #F7DBB9;
-    border-radius: 25px 25px 25px 25px;
+    border-radius: 25px;
     padding: 0.4rem;
     text-decoration: none;
     color: #3E1E04;
-
 }
-h2{
-    font-size: 4rem;
-    margin-left: 4rem;
+
+h2 {
+    font-size: 3.5rem;
     margin-bottom: 3rem;
     color: #3E1E04;
+    text-align: left;
 }
-h3{
+
+h3 {
     color: #F7DBB9;
     font-size: 2rem;
     margin-left: 1rem;
 }
-.articles{
+
+.articles {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin: 2rem 0;
 }
-.articlesFav{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-article{
-   width: 35rem;
-   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-   height: 40rem;
-   background-color: #3E1E04;
-   margin-bottom: 4rem;
 
+article {
+    width: 30%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    height: auto;
+    background-color: #3E1E04;
+    margin-bottom: 4rem;
+    padding: 2rem;
+    box-sizing: border-box;
 }
-article img{
+
+article img {
     width: 100%;
-    height: 75%;
+    height: auto;
     margin-bottom: 2rem;
-    margin-bottom: 0.5rem;
 }
-article p{
+
+article p {
     margin-bottom: 1rem;
-    margin-top: 2rem;
     color: #F7DBB9;
 }
-article a{
+
+article a {
     text-decoration: none;
     color: #3E1E04;
-    margin-left: 8rem;
-    margin-top: 1rem;
-    font-size: 3rem;
+    font-size: 2rem;
     background-color: #F7DBB9;
     padding: 0.2rem 1rem;
-    border-radius: 25px 25px 25px 25px;
-
+    border-radius: 25px;
 }
-/**catalogue**/
-.titreCatalogue{
-    background-image: url(/coffees/891009545.png);
+
+/** Catalogue Section */
+.titreCatalogue {
+    background-image: url('/coffees/891009545.png');
     background-size: cover;
-    color:wheat;
-    margin: auto;
+    color: wheat;
     padding: 10rem;
-    width: 100%;
     text-align: center;
-    padding-top: 4rem;
     margin-bottom: 5rem;
 }
-.btnCatalog{
+
+.btnCatalog {
     text-decoration: none;
-    text-align: center;
     color: #3E1E04;
-    margin-top: 2rem;
-    margin-left: 4rem;
-    width: 40rem;
-    font-size: 3rem;
-    border-radius: 25px 25px 25px 25px;
+    font-size: 2rem;
+    border-radius: 25px;
     background-color: #F7DBB9;
     padding: 1.5rem;
+    margin-top: 2rem;
 }
-form{
-    width: 40rem;
-    margin-left: 110rem;
-    padding: 20px;
-    border-radius: 8px; 
+
+/** Form Section */
+form {
+    width: 40%;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 8px;
     display: flex;
-    flex-direction: column;  
-    gap: 15px;  
+    flex-direction: column;
+    gap: 15px;
     font-size: 1.5rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 label {
-      font-size: 2em;
-      color: #F7DBB9;
-      margin-bottom: 8px;
-}
-input{
-      background-color: #3E1E04;
-      color:  #F7DBB9;
-      border-radius: 25px 25px 25px 25px;;
-      font-size: 1em;
-      border: none;
-      cursor: pointer;
-      margin-left: 5rem;
-}
-.FavLink{
-    font-size: 1rem;
-    padding: 0rem;
+    font-size: 1.5rem;
     color: #F7DBB9;
+    margin-bottom: 8px;
+}
+
+input {
     background-color: #3E1E04;
+    color: #F7DBB9;
+    border-radius: 25px;
+    font-size: 1rem;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
 }
-/**détail**/
-.detail-article{
-   width: 40%;
-   border: black, solid;
-   height: 38rem;
-   background-color: #3E1E04;
-   margin-left: 10rem;
-   background-image: url(coffees/958090105.png);
-   background-size: cover;
-   color: #F7DBB9;
+
+/** Detail Section */
+.detail-article {
+    width: 50%;
+    height: 38rem;
+    background-color: #3E1E04;
+    margin: 2rem auto;
+    background-image: url('/coffees/958090105.png');
+    background-size: cover;
+    color: #F7DBB9;
+    padding: 2rem;
+    box-sizing: border-box;
 }
-.detail-article h3{
+
+.detail-article h3 {
     margin-top: 2rem;
 }
-h4{
-    padding-left: 50rem;
-}
-/**category**/
-.h2Category{
+
+/** Category Section */
+.h2Category {
     color: #F7DBB9;
 }
-footer {   
-    font-size: 0.1rem;
-    margin-top: 2rem;
-  }
-/**admin**/
-.formAdmin{
+
+/** Admin Section */
+.formAdmin {
     display: flex;
     flex-wrap: wrap;
-    gap: 10rem;
-}
-.addCoffeeForm, .DeleteCoffeeForm{
-    margin-left: 10rem;
-    width: 60%;
+    gap: 2rem;
+    justify-content: space-between;
 }
 
-#menu-button{
-    display: none;
+.addCoffeeForm,
+.DeleteCoffeeForm {
+    width: 45%;
+    margin-top: 2rem;
 }
-@media screen and (max-width:1280px){
+
+/** Footer */
+footer {
+    font-size: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1280px) {
     h1, h2, p {
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin: 2rem;
+        font-size: 2rem;
     }
 
-   .cups{
-    display: none;
-   }
-    .catalogLink{
+    .menu-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cups {
+        display: none;
+    }
+
+    .catalogLink {
         font-size: 2rem;
     }
-    h2{
-        font-size: 2rem;
-        margin-top: 1rem;
-    }
+
     .articles {
         display: block;
+        margin: 1rem;
     }
-    .btnCatalog{
+
+    article {
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    .btnCatalog {
         font-size: 2rem;
-    }
-    article{
-        width: 28rem;
-        
-    }
-    
-    form{
         width: 100%;
-        margin-left: 1rem;
     }
-    .titreCatalogue{
+
+    form {
+        width: 100%;
+    }
+
+    .titreCatalogue {
         display: none;
     }
-    .detail-article{
-        width: 100%;
-        border: black, solid;
-        height: 100%;
-        margin-right: 4rem;
-     }
-     h4{
-        padding-left: 1rem;
-        width: 100%;
-        margin-left: 1rem;
-     }
-     .detail-article a {
-        margin-left: 2rem;
-     }
-      #menu-button {
-        display: block;
-        background: none;
-        border: none;
-        color: white;
-        cursor: pointer;
-        margin-top: 10rem;
-      }
-      .menu-listing {
-        display: none;
+
+    .detail-article {
+        width: 90%;
+        margin: 2rem auto;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    .menu-listing {
         flex-direction: column;
-        position: absolute;
-        top: 60px; 
-        left: 0;
+        align-items: center;
+    }
+
+    .menu-listing a {
+        font-size: 1.8rem;
+    }
+
+    article {
         width: 100%;
-        background-color: #3E1E04;
-        padding: 10px 0;
-      }
-      .menu-listing.expanded {
-        display: flex; 
-      }
-      .menu-listing li {
-        margin: 10px 0;  
-        text-align: center;
-      }
-      .addCoffeeForm, .DeleteCoffeeForm{
-        width: 80%;  
-        margin-left: 0;  
-        margin-top: 2rem;
-    }
     }
 
-
+    .btnCatalog {
+        font-size: 1.8rem;
+    }
+}
