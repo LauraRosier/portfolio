@@ -264,6 +264,9 @@ footer {
         width: 29rem;
         
     }
+    .btnCatalog{
+        font-size: 1.5rem;
+    }
     
     form{
         width:25rem;
