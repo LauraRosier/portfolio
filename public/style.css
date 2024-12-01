@@ -77,6 +77,7 @@ h3{
     color: #F7DBB9;
     font-size: 2rem;
     margin-left: 1rem;
+    margin-bottom: 1rem;
 }
 .articles{
     display: flex;
@@ -113,8 +114,8 @@ article a{
     text-decoration: none;
     color: #3E1E04;
     margin-left: 8rem;
-    margin-top: 2rem;
-    font-size: 1rem;
+    margin-top: rem;
+    font-size: 2rem;
     background-color: #F7DBB9;
     padding: 0.2rem 1rem;
     border-radius: 25px 25px 25px 25px;
@@ -218,9 +219,16 @@ footer {
     display: none;
 }
 @media screen and (max-width:1280px){
+    header a{
+        font-size: 2.5rem;
+        margin-bottom: 8rem;
+    }
     h1, h2, p {
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    h1{
+        font-size: 2rem;
     }
 
    .cups{
@@ -235,8 +243,8 @@ footer {
     }
     .articles {
         display: block;
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
     }
     .articles h3 {
         margin-bottom: 2rem;
