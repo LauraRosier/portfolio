@@ -235,6 +235,7 @@ footer {
     }
     .articles {
         display: block;
+        margin-left: 0rem;
     }
     .btnCatalog{
         font-size: 2rem;
@@ -255,7 +256,7 @@ footer {
         width: 100%;
         border: black, solid;
         height: 100%;
-        margin-right: 4rem;
+        margin-left: 0rem;
      }
      h4{
         padding-left: 1rem;
