@@ -264,8 +264,9 @@ footer {
         width: 29rem;
         
     }
+    
     form{
-        width: 30rem;
+        width:30rem;
         margin-left: 1rem;
     }
     .titreCatalogue{
@@ -301,7 +302,7 @@ footer {
         top: 60px; 
         left: 0;
         width: 100%;
-        height: 1rem;
+        height: 40%;
         background-color: #3E1E04;
         padding: 10px 0;
       }
@@ -311,6 +312,7 @@ footer {
       .menu-listing li {
         margin: 10px 0;  
         text-align: center;
+        height: 15%;
       }
       .addCoffeeForm, .DeleteCoffeeForm{
         width: 80%;  
