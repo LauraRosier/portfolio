@@ -113,7 +113,7 @@ article a{
     text-decoration: none;
     color: #3E1E04;
     margin-left: 8rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
     font-size: 1rem;
     background-color: #F7DBB9;
     padding: 0.2rem 1rem;
@@ -235,7 +235,7 @@ footer {
     }
     .articles {
         display: block;
-        margin-left: 0rem;
+        margin-left: 2rem;
     }
     .btnCatalog{
         font-size: 2rem;
@@ -256,7 +256,7 @@ footer {
         width: 100%;
         border: black, solid;
         height: 100%;
-        margin-left: 0rem;
+        margin-left: 2rem;
      }
      h4{
         padding-left: 1rem;
