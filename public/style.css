@@ -230,12 +230,16 @@ footer {
     h1{
         font-size: 2rem;
     }
+    .catalogLink{
+        font-size: 2rem;
+    }
 
    .cups{
     display: none;
    }
     .catalogLink{
         font-size: 2rem;
+        margin-left: 2rem;
     }
     h2{
         font-size: 2rem;
@@ -258,7 +262,7 @@ footer {
     }
     
     form{
-        width: 100%;
+        width: 23rem;
         margin-left: 1rem;
     }
     .titreCatalogue{
@@ -268,7 +272,8 @@ footer {
         width: 100%;
         border: black, solid;
         height: 100%;
-        margin-left: 2rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
      }
      h4{
         padding-left: 1rem;
